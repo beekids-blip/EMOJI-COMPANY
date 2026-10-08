@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的情緒百變怪｜Emoji電力公司 2027 情緒管理營</title>
+<meta name="description" content="2027寒假兒童營會《Emoji電力公司》情緒管理營：釋放心中的百變怪，投稿就有機會抽大獎！">
+<meta property="og:title" content="我的情緒百變怪｜Emoji電力公司">
+<meta property="og:image" content="images/keyvisual.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<style>
+:root{--navy:#0d2150;--navy2:#16346f;--navy3:#1f4488;--gold:#ffc61a;--cream:#fff3c4;--ink:#10224a;
+--c-yellow:#ffb12b;--c-green:#6fd49a;--c-purple:#b497e6;--c-blue:#4d86ea;--c-red:#ee5a4b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color:var(--cream);line-height:1.8;
+background:radial-gradient(circle at 20% 0,var(--navy3),transparent 45%),var(--navy);min-height:100vh}
+a{color:inherit;text-decoration:none}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(13,33,80,.92);backdrop-filter:blur(10px);border-bottom:2px solid var(--gold)}
+.nav{max-width:1100px;margin:auto;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{font-weight:900;font-size:19px;color:var(--gold);letter-spacing:1px}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.nav button{font:inherit;font-weight:700;color:var(--cream);background:none;border:0;padding:8px 18px;border-radius:99px;cursor:pointer}
+.nav button.on,.nav button:hover{background:var(--gold);color:var(--ink)}
+/* hero */
+.hero{max-width:1100px;margin:auto;padding:56px 20px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-block;background:var(--gold);color:var(--ink);font-weight:800;font-size:14px;padding:5px 16px;border-radius:99px}
+.hero h1{font-size:clamp(38px,6.5vw,66px);line-height:1.15;margin:16px 0;color:#fff;text-shadow:0 4px 0 var(--navy2)}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:18px;max-width:480px}
+.dots{display:flex;gap:10px;margin:22px 0}.dots i{width:22px;height:22px;border-radius:50%;box-shadow:0 0 0 3px rgba(255,255,255,.25)}
+.btn{display:inline-block;background:linear-gradient(#ffd84d,var(--gold));color:var(--ink);font-weight:900;padding:14px 34px;border-radius:99px;box-shadow:0 5px 0 #c58f00,0 12px 24px rgba(0,0,0,.35);transition:.15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 3px 0 #c58f00}
+.btn.ghost{background:none;color:var(--gold);box-shadow:inset 0 0 0 2px var(--gold);margin-left:10px}
+.poster{border-radius:22px;border:4px solid var(--gold);box-shadow:0 0 0 8px rgba(255,198,26,.15),0 24px 50px rgba(0,0,0,.5);overflow:hidden;max-width:420px;margin:auto}
+.poster img{display:block;width:100%}
+/* sections */
+main{max-width:1100px;margin:auto;padding:0 20px 70px}
+section{margin-top:56px}
+h2{font-size:28px;margin:0 0 22px;color:#fff;display:flex;align-items:center;gap:12px}
+h2::before{content:"⚡";color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:linear-gradient(160deg,var(--navy3),var(--navy2));border:2px solid rgba(255,198,26,.45);border-radius:20px;padding:24px;position:relative}
+.card h3{margin:0 0 10px;color:var(--gold);font-size:19px}
+.card ol{margin:0;padding-left:20px}.card li{margin-bottom:6px}
+.card.c1{border-top:6px solid var(--c-yellow)}.card.c2{border-top:6px solid var(--c-green)}.card.c3{border-top:6px solid var(--c-blue)}.card.c4{border-top:6px solid var(--c-red)}
+.big{font-size:20px;font-weight:800;color:#fff}
+.topic{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.topic img{width:100%;border-radius:16px;border:3px solid var(--gold)}
+.works{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.work{background:var(--navy2);border:2px solid rgba(255,198,26,.45);border-radius:16px;overflow:hidden}
+.work img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.work div{padding:10px 14px}
+.empty{text-align:center;padding:40px 20px;border:2px dashed rgba(255,198,26,.5);border-radius:20px;color:#cfd8f5}
+.win{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px dashed rgba(255,255,255,.25)}.win:last-child{border:0}
+.win b{color:var(--gold)}
+.quote{text-align:center;padding:36px 20px;background:var(--cream);color:var(--ink);border-radius:22px;border:4px solid var(--gold)}
+.quote em{display:block;font-style:normal;font-size:14px;margin-top:8px;opacity:.75}
+.cta{text-align:center;padding:44px 20px;border-radius:22px;background:linear-gradient(135deg,var(--c-purple),var(--c-blue))}
+.cta h2{justify-content:center;color:#fff;font-size:24px}.cta h2::before{content:none}
+.view{display:none}.view.on{display:block}
+.pagehead{max-width:1100px;margin:auto;padding:48px 20px 0}.pagehead h1{font-size:38px;margin:0;color:#fff}
+footer{text-align:center;padding:30px 20px;border-top:2px solid var(--gold);background:var(--navy);font-size:14px;color:#aebbe0}
+@media(max-width:780px){.hero,.topic{grid-template-columns:1fr}.poster{order:-1;max-width:300px}.hero{padding-top:32px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="#" onclick="go('home');return false">⚡ Emoji 電力公司</a>
+<ul>
+<li><button class="on" data-v="home" onclick="go('home')">首頁</button></li>
+<li><button data-v="submit" onclick="go('submit')">投稿上傳</button></li>
+<li><button data-v="gallery" onclick="go('gallery')">作品畫廊</button></li>
+</ul></div></header>
+
+<div id="home" class="view on">
+<div class="hero">
+<div>
+<span class="pill">2027 寒假兒童營會・情緒管理營</span>
+<h1>我的情緒<span>百變怪</span></h1>
+<p>各位小怪獸們，你們心中是否都有一隻百變怪。每次出現時都是不同形狀，不同顏色。有時有形狀，有時連形狀都不是，讓大家認識牠吧！</p>
+<div class="dots"><i style="background:var(--c-yellow)"></i><i style="background:var(--c-green)"></i><i style="background:var(--c-purple)"></i><i style="background:var(--c-blue)"></i><i style="background:var(--c-red)"></i></div>
+<a class="btn" href="#" onclick="go('submit');return false">立即投稿 ⚡</a>
+<a class="btn ghost" href="#rules">活動規則</a>
+</div>
+<div class="poster"><img src="images/keyvisual.jpg" alt="Emoji電力公司 2027 情緒管理營 主視覺"></div>
+</div>
+<main>
+<section id="topic"><h2>本週題目</h2><div class="card" id="topicBox"></div></section>
+
+<section id="rules"><h2>活動規則</h2>
+<div class="grid">
+<div class="card c1"><h3>📮 投稿方式</h3><ol><li>投入真道教會四樓的投稿信箱</li><li>掃描 QR Code 線上投稿</li></ol></div>
+<div class="card c2"><h3>⏰ 活動時間</h3><p class="big" id="deadline"></p><p>即日起，每三週進行一次抽獎。</p></div>
+<div class="card c3"><h3>📋 注意事項</h3><ol><li>投稿不限次數，但每人僅限一次中獎機會</li><li>可自由創作，但請勿使用不雅文字或圖像</li><li>主辦單位保留作品篩選及展示之權利</li><li>參加活動即視為同意主辦單位於宣傳及展示範圍內使用投稿作品</li></ol></div>
+<div class="card c4"><h3>🎁 投稿好禮</h3><ol><li>凡投稿就有機會獲得精美小禮物，每次抽出 10 位幸運投稿者！</li><li>作品累積 10 張以上共鳴貼紙，即可參加「情緒共鳴獎」抽獎，有機會帶走一隻情緒怪物！</li><li>投稿時留下姓名及電話，報名《Emoji電力公司》即可折抵 100 元報名費！</li></ol></div>
+</div></section>
+
+<section><h2>本輪精選作品</h2><div id="featured"></div>
+<p style="text-align:right"><a class="btn" href="#" onclick="go('gallery');return false">更多作品 →</a></p></section>
+
+<section><h2>本輪得獎名單</h2><div class="card" id="winners"></div></section>
+
+<section><h2>領獎說明</h2><div class="card"><ol><li>領獎資格將保留兩週，逾時將不提供兌獎。</li><li>可於 Bee Kids 聚會時間，與行政老師詢問領取。</li><li>若是西門國小或大理國小老師，可詢問品格教育老師索取。</li></ol></div></section>
+
+<section class="quote"><div class="big" style="color:var(--ink)">怪獸不是為了嚇人而存在，而是我們內心情感的溫柔映照</div>
+<em>Monsters aren't here to scare us, they are gentle reflections of our inner emotions.<br>— 畫家 Mateo Dineen 馬特奧·迪寧</em></section>
+
+<section class="cta"><h2>更多了解情緒百變怪，趕快報名《Emoji電力公司》</h2><a class="btn formlink" href="#">報名連結 ⚡</a></section>
+</main></div>
+
+<div id="submit" class="view"><div class="pagehead"><h1>📮 投稿上傳</h1></div><main>
+<section><div class="card"><h3>線上投稿</h3><p>掃描 QR Code 或按下按鈕，填寫表單並上傳你的情緒百變怪作品。投稿時留下姓名及電話，報名《Emoji電力公司》即可折抵 100 元報名費！</p>
+<div id="qr"></div><a class="btn formlink" href="#">前往投稿 / 報名表單 ⚡</a></div></section></main></div>
+
+<div id="gallery" class="view"><div class="pagehead"><h1>🖼️ 作品畫廊</h1></div><main><section><div id="allworks"></div></section></main></div>
+
+<footer>© 2027 Bee Kids・真道教會｜Emoji電力公司 情緒管理營</footer>
+<script src="content.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+function go(v){document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));
+document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));scrollTo(0,0)}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function workHTML(list,empty){return list.length?'<div class="works">'+list.map(w=>`<div class="work"><img loading="lazy" src="${esc(w.image)}" alt="${esc(w.title||'')}"><div><b>${esc(w.title||'')}</b><br><small>${esc(w.author||'')}</small></div></div>`).join('')+'</div>':`<div class="empty">${empty}</div>`}
+$('deadline').textContent=SITE.deadline;
+$('topicBox').innerHTML=`<h3>${esc(SITE.topic.title)}</h3>`+(SITE.topic.image?`<div class="topic"><img src="${esc(SITE.topic.image)}" alt=""><p class="big">${esc(SITE.topic.text)}</p></div>`:`<p class="big">${esc(SITE.topic.text)}</p>`);
+$('featured').innerHTML=workHTML(SITE.works.filter(w=>w.featured),'🖼️ 本輪精選作品即將登場，快來投稿吧！');
+$('allworks').innerHTML=workHTML(SITE.works,'🖼️ 作品陸續上架中，期待你的投稿！');
+$('winners').innerHTML=SITE.winners.map(w=>`<div class="win"><span>🏆 ${esc(w.prize)}</span><b>《得獎人》${esc(w.name)}</b></div>`).join('')||'敬請期待';
+document.querySelectorAll('.formlink').forEach(a=>a.href=SITE.formUrl);
+if(SITE.qrImage)$('qr').innerHTML=`<img src="${esc(SITE.qrImage)}" alt="投稿 QR Code" style="width:180px;border-radius:12px;border:3px solid var(--gold);margin:8px 0 16px;display:block">`;
+</script>
+</body>
+</html>
