@@ -5,7 +5,7 @@
 const SITE = {
   deadline: "2027/1/23（六）17:00",
   formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScoUBHQNFneUOUD2DYlApitpX0ftXBJ8q8Qdxo1l6DjhjZsvw/viewform?usp=header",              // ← 貼上線上投稿／報名表單連結
-  ChatGPT Image 2026年10月8日 下午02_02_37: "",               // ← 投稿 QR Code 圖片，例如 "images/qr.png"（沒有就留空）
+  qrImage: "images/EDM.JPG",   // ← 投稿 QR Code 圖片（檔名大小寫要和 images 資料夾裡的一模一樣）
 
   // 本週題目（把圖片放進 images，填檔名；沒有就留空）
   topic: { title: "本週題目", image: "", text: "題目圖片將於每週更新，自由發揮你的創意！" },
