@@ -8,7 +8,7 @@ const SITE = {
   qrImage: "images/EDM.JPG",   // ← 投稿 QR Code 圖片（檔名大小寫要和 images 資料夾裡的一模一樣）
 
   // 本週題目（把圖片放進 images，填檔名；沒有就留空）
-  topic: { title: "本週題目", image: "", text: "題目圖片將於每週更新，自由發揮你的創意！" },
+  topic: { title: "本週題目", image: "", text: "我這禮拜看到喜歡的人的心情" },
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
   works: [
