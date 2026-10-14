@@ -146,7 +146,7 @@ footer{text-align:center;padding:30px 20px;border-top:2px solid var(--gold);back
     $('topicBox').innerHTML=`<h3>${esc(SITE.topic.title)}</h3>`+(SITE.topic.image?`<div class="topic"><img src="${esc(SITE.topic.image)}" alt=""><p class="big">${esc(SITE.topic.text)}</p></div>`:`<p class="big">${esc(SITE.topic.text)}</p>`);
     $('featured').innerHTML=workHTML(SITE.works.filter(w=>w.featured),'🖼️ 本輪精選作品即將登場，快來投稿吧！');
     $('allworks').innerHTML=workHTML(SITE.works,'🖼️ 作品陸續上架中，期待你的投稿！');
-    $('winners').innerHTML=SITE.winners.map(w=>`<div class="win"><span>🏆 ${esc(w.prize)}</span><b>《得獎人》${esc(w.name)}</b></div>`).join('')||'敬請期待';
+    $('winners').innerHTML=SITE.winners.map(w=>`<div class="win"><span>🏆 ${esc(w.prize)}</span><b>${esc(w.name)}</b></div>`).join('')||'敬請期待';
     document.querySelectorAll('.formlink').forEach(a=>{a.href=SITE.formUrl;a.target='_blank';a.rel='noopener'});
     if(SITE.formUrl&&SITE.formUrl!=='#'){$('formEmbed').innerHTML=`<iframe src="${esc(SITE.formUrl.replace(/viewform.*$/,'viewform?embedded=true'))}" style="width:100%;height:1400px;border:0;border-radius:16px;background:#fff;margin-top:20px" title="投稿表單">載入中…</iframe>`}
     if(SITE.qrImage)$('qr').innerHTML=`<img src="${esc(SITE.qrImage)}" alt="投稿 QR Code" style="width:180px;border-radius:12px;border:3px solid var(--gold);margin:8px 0 16px;display:block">`;
