@@ -18,12 +18,9 @@ const SITE = {
     // { image: "happy(4).jpg", title: "作品名稱", author: "楊X明", featured: true },
   ],
 
-  // 本輪得獎名單
-  winners: [
-    { prize: "情緒共鳴獎", name: "楊X東" },
-    { prize: "我的百變怪", name: "楊X東2" },
-    { prize: "我的百變怪", name: "楊X東3" },
-    { prize: "我的百變怪", name: "楊X東4" }
-
-  ]
+ // 本輪得獎名單
+  winners: {
+    "情緒共鳴獎": ["楊X東", "楊X東2", "楊X東4"],
+    "我的百變怪": ["楊X東", "楊X東3"]
+  }
 };
