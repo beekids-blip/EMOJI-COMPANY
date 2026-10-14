@@ -11,11 +11,11 @@ const SITE = {
   topic: { title: "本週題目", image: "", text: "我這禮拜看到喜歡的人的心情" },
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
-  works: [
-     { images: "happy (1).jpg", title: "作品名稱", author: "王X明", featured: true },
-     { images: "happy (2).jpg", title: "作品名稱", author: "楊X明", featured: false },
-     { images: "happy (3).jpg", title: "作品名稱", author: "楊X明", featured: false },
-     { images: "happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+ works: [
+    { image: "images/happy (1).jpg", title: "作品名稱", author: "王X明", featured: true },
+    { image: "images/happy (2).jpg", title: "作品名稱", author: "楊X明", featured: false },
+    { image: "images/happy (3).jpg", title: "作品名稱", author: "楊X明", featured: false },
+    { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
   ],
 
  // 本輪得獎名單
