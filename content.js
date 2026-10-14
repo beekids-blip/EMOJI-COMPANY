@@ -28,6 +28,6 @@ const SITE = {
  // 本輪得獎名單
  winners: [
     { prize: "情緒共鳴獎", name: "楊X東" },
-    { prize: "我的百變怪", name: "楊X東、楊X東3、楊X東4" },
+    { prize: "我的百變怪", name: "楊X東1、楊X東2、楊X東3、楊X東4、楊X東5、楊X東6、楊X東7、楊X東8、楊X東9、楊X東0" },
   ]
 };
