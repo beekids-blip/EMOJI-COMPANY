@@ -12,7 +12,9 @@ const SITE = {
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
   works: [
-    // { image: "images/work1.jpg", title: "作品名稱", author: "王X明", featured: true },
+    // { image: "happy1.jpg", title: "作品名稱", author: "王X明", featured: true },
+    // { image: "happy2.jpg", title: "作品名稱", author: "楊X明", featured: false },
+    // { image: "happy3.jpg", title: "作品名稱", author: "楊X明", featured: false },
   ],
 
   // 本輪得獎名單
