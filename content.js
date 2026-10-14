@@ -16,6 +16,13 @@ const SITE = {
     { image: "images/happy (2).jpg", title: "作品名稱", author: "楊X明", featured: false },
     { image: "images/happy (3).jpg", title: "作品名稱", author: "楊X明", featured: false },
     { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+        { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+        { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+        { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+        { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+        { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+        { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
+        { image: "images/happy (4).jpg", title: "作品名稱", author: "楊X明", featured: true },
   ],
 
  // 本輪得獎名單
