@@ -3,7 +3,7 @@
    2. 修改下面的檔名與文字
    3. 重新上傳到 GitHub 即可 */
 const SITE = {
-  deadline: "2027/1/23（六）17:00",
+  deadline: "2027/1/23（六）17:00截止",
   formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScoUBHQNFneUOUD2DYlApitpX0ftXBJ8q8Qdxo1l6DjhjZsvw/viewform?usp=header",              // ← 貼上線上投稿／報名表單連結
   qrImage: "images/EDM.JPG",   // ← 投稿 QR Code 圖片（檔名大小寫要和 images 資料夾裡的一模一樣）
 
