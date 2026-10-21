@@ -183,16 +183,16 @@ footer{font-size:12px;padding:20px 12px}
   <div style="grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
     
     <!-- 格子 2：營會時間與地點 -->
-    <div class="card c2" style="margin: 0; padding: 12px 10px;">
-      <h3 style="font-size: 15px; margin-bottom: 8px;">📅 營會資訊與資格</h3>
-      <ul style="padding-left: 15px; margin: 0; font-size: 13px; line-height: 1.5;">
-        <li><strong>招募對象：</strong>國小三年級至六年級（額滿為止）</li>
-        <li><strong>活動日期：</strong>2027/2/1（一）～ 2027/2/3（三）<small>（當天接送，不過夜）</small></li>
-        <li><strong>打卡時間：</strong>08:30 - 17:30</li>
-        <li><strong>活動地點：</strong>真道教會R樓<br><small>（台北市萬華區中華路一段114號R樓）</small></li>
-        <li><strong>聯絡專線：</strong>陳先生 0920-459-863</li>
-      </ul>
-    </div>
+<div class="card c2" style="margin: 0; padding: 14px 16px;">
+  <h3 style="font-size: 15px; margin-bottom: 10px;">📅 營會資訊與資格</h3>
+  <ul style="padding-left: 18px; padding-right: 8px; margin: 0; font-size: 13px; line-height: 1.6;">
+    <li>招募對象：國小三年級至六年級（額滿為止）</li>
+    <li>活動日期：2027/2/1（一）～ 2027/2/3（三）<small>（當天接送，不過夜）</small></li>
+    <li>打卡時間：08:30 - 17:30</li>
+    <li>活動地點：真道教會R樓<small>（台北市萬華區中華路一段114號R樓）</small></li>
+    <li>聯絡專線：陳先生 0920-459-863</li>
+  </ul>
+</div>
 
     <!-- 格子 3：報名費用與折扣 -->
     <div class="card c4" style="margin: 0; padding: 12px 10px;">
@@ -214,18 +214,48 @@ footer{font-size:12px;padding:20px 12px}
   </div>
 
     <!-- 格子 4：課表 (全寬卡片) -->
-    <div class="card c3" style="grid-column: 1 / -1;">
-    <h3>⚡ 課程主題日程表</h3>
-    <div style="overflow-x: auto; margin-top: 12px;">
-    <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 14px; background: rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden;"><thead>
-    <tr style="background: var(--navy3); color: var(--gold);">
-    <th style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">時間</th>
-    <th style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">第一天 (2/1)</th>
-    <th style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">第二天 (2/2)</th>
-    <th style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);">第三天 (2/3)</th>
-    </tr>  </thead><tbody><tr>
-    <td style="padding: 10px; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05);">早上 (上)</td>
-    <td style="padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.
+<div class="card c3" style="grid-column: 1 / -1;">
+  <h3>⚡ 課程主題日程表</h3>
+  <div style="overflow-x: auto; margin-top: 12px;">
+    <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 14px; background: rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden; border: 1px solid #333;">
+      <thead>
+        <tr style="background: var(--navy3, #1e293b); color: var(--gold, #ffd700);">
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.2); width: 15%;"></th>
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.2); width: 283%;">第一天</th>
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.2); width: 28.3%;">第二天</th>
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.2); width: 28.3%;">第三天</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 早上時段 (跨 2 列) -->
+        <tr>
+          <td rowspan="2" style="padding: 12px; font-weight: bold; border: 1px solid rgba(255,255,255,0.1); vertical-align: middle;">早上</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">情緒是什麼<br><small>《解鎖Emoji燃料庫》</small></td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">想法轉換<br><small>《發電廠紅綠燈》</small></td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">自己的情緒<br><small>《打包情緒帶著走》</small></td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">發現情緒<br><small>《輸送帶上的燃料》</small></td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">情緒調節<br><small>《啟動冷卻系統》</small></td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">別人的情緒<br><small>《外帶情緒電源》</small></td>
+        </tr>
+
+        <!-- 下午時段 (淺黃色底色 & 第三天合併列) -->
+        <tr style="background: #fff2cc; color: #333;">
+          <td rowspan="2" style="padding: 12px; font-weight: bold; border: 1px solid #d9d9d9; vertical-align: middle;">下午</td>
+          <td style="padding: 10px; border: 1px solid #d9d9d9;">《認識公司老闆》</td>
+          <td style="padding: 10px; border: 1px solid #d9d9d9;">《失控的情緒怪獸》</td>
+          <!-- 第三天下午跨 2 列合併 -->
+          <td rowspan="2" style="padding: 10px; border: 1px solid #d9d9d9; vertical-align: middle; font-weight: bold;">《有誰需要電》</td>
+        </tr>
+        <tr style="background: #fff2cc; color: #333;">
+          <td style="padding: 10px; border: 1px solid #d9d9d9;">《尋找隱藏燃料》</td>
+          <td style="padding: 10px; border: 1px solid #d9d9d9;">《電廠防爆計畫》</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
   
 <!-- ✨投稿上傳 -->
     <div id="submit" class="view"><div class="pagehead"><h1>📮 投稿上傳</h1></div><main>
