@@ -103,6 +103,22 @@
     footer{font-size:12px;padding:20px 12px}}
     .formframe{width:100%;height:900px;border:0;border-radius:16px;background:#fff;margin:16px 0 24px;display:block}@media(max-width:780px){.formframe{height:1100px}}
     .mbr{display:none}@media(max-width:780px){.mbr{display:inline}}
+    .info2{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.info-card{margin:0}
+.info-card ul{margin:0;padding-left:20px;font-size:14px;line-height:1.7}
+.promo{background:rgba(255,198,26,.15);border-left:3px solid var(--gold);margin:10px 0 0;padding:10px 12px;border-radius:6px;font-size:13px;line-height:1.6}
+.sched{width:100%;border-collapse:collapse;text-align:center;font-size:14px}
+.sched th,.sched td{padding:10px;border:1px solid rgba(255,255,255,.15)}
+
+@media(max-width:780px){
+  .info2{grid-template-columns:1fr}   /* 手機改上下排列 */
+  .info-card{padding:16px}
+  .info-card ul{font-size:14px}
+  .sched{font-size:12px}
+  .sched th,.sched td{padding:8px 4px}
+  .sched td:first-child,.sched th:first-child{width:36px;white-space:nowrap}  /* 讓「早上/下午」不要直排 */
+  .sched small{font-size:11px}
+}
     </style>
     </head>
 
@@ -185,8 +201,7 @@
     <p>每個孩子心中都有一隻百變怪，會隨著你的情緒變大變小。牠每天的工作，就是將心中的情緒燃料經過分類、辨識與處理，再放進發電機。這次的訓練營，就是要好好訓練你的百變怪，成為合格的電力公司成員！</p>
     </div>
     <!-- ⚡ 固定切成兩欄 (1fr 1fr)，手機與電腦都會強制左右對半 ⚡ -->
-    <div style="grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-    
+<div class="info2">    
 <!-- 格子 2：營會時間與地點 -->
     <div class="card c2" style="margin: 0; padding: 14px 16px;">
     <h3 style="font-size: 15px; margin-bottom: 10px;">📅 營會資訊與資格</h3>
