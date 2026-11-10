@@ -119,6 +119,24 @@
   .sched td:first-child,.sched th:first-child{width:36px;white-space:nowrap}  /* 讓「早上/下午」不要直排 */
   .sched small{font-size:11px}
 }
+    /* 營會線上報名 兩格 */
+.signup-title{justify-content:center;margin-bottom:20px}
+.signup-title::after{content:"⚡";color:var(--gold)}
+.signup2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:30px}
+.signup-card{text-align:center;padding:32px 20px;display:flex;flex-direction:column}
+.signup-card h3{font-size:24px;margin-bottom:18px}
+.s-desc{font-size:16px;margin:0 0 12px}
+.s-note{font-size:13px;opacity:.85;margin:0 0 20px}
+.s-note.hl{color:var(--gold);font-weight:700;opacity:1}
+.s-btn{margin-top:auto;display:block;width:100%;box-sizing:border-box;font-size:18px;padding:16px 20px}
+
+@media(max-width:780px){
+  .signup2{grid-template-columns:1fr;gap:14px}
+  .signup-card{padding:22px 14px}
+  .signup-card h3{font-size:20px;margin-bottom:12px}
+  .s-desc{font-size:14px}
+  .s-btn{font-size:16px;padding:12px 16px}
+}
     </style>
     </head>
 
