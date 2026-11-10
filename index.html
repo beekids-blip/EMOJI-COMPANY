@@ -179,19 +179,37 @@
 <!-- ✨上傳畫冊 -->
     <div id="gallery" class="view"><div class="pagehead"><h1>🖼️ 作品畫廊</h1></div><main><section><div id="allworks"></div></section></main></div>
 
-<!-- ✨ 馬上報名頁面 -->
-    <div id="signup" class="view">
-    <div class="pagehead">
-    <h1 style="text-align: center;">馬上報名<br class="mbr">《Emoji電力公司》2027 情緒管理營</h1>
-    <main><section>
-    <!-- 🚀 置頂：馬上報名卡片與按鈕 -->
-    <div class="card" style="text-align: center; padding: 32px 20px; margin-bottom: 30px; border: 3px solid var(--gold); background: linear-gradient(160deg, var(--navy2), var(--navy3));">
-    <h3>⚡ 營會線上報名 ⚡</h3>
-    <p style="font-size: 16px; margin-bottom: 12px;">點擊下方按鈕下載真道 APP，選擇活動頁面進行報名！</p>
-    <p style="font-size: 13px; opacity: 0.85; margin-bottom: 20px;">※ 本活動繳交完成費用才算報名完成並予以保留名額。</p>
-        
-    <!-- 報名表單內嵌容器 --><div id="signupFormEmbed"></div> <a class="btn" href="https://truthchurch.s.gy/tcapp" target="_blank" style="font-size: 18px; padding: 16px 40px;">真道 APP 下載連結 ⚡</a></div>
 
+<!-- 🚀 置頂：馬上報名卡片（雙欄並排） -->
+<div class="card" style="padding: 32px 20px; margin-bottom: 30px; border: 3px solid var(--gold); background: linear-gradient(160deg, var(--navy2), var(--navy3));">
+  <h3 style="text-align: center; margin-bottom: 24px;">⚡ 營會線上報名 ⚡</h3>
+  
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+    
+    <!-- 左側：會友報名 (APP) -->
+    <div style="flex: 1; min-width: 280px; background: rgba(255, 255, 255, 0.05); padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+      <div>
+        <h4 style="font-size: 20px; margin-bottom: 12px; color: var(--gold);">真道會友報名</h4>
+        <p style="font-size: 15px; margin-bottom: 12px;">點擊下方按鈕下載真道 APP，選擇活動頁面進行報名！</p>
+        <p style="font-size: 13px; opacity: 0.85; margin-bottom: 20px;">※ 本活動繳交完成費用才算報名完成並予以保留名額。</p>
+      </div>
+      <div>
+        <div id="signupFormEmbed"></div> 
+        <a class="btn" href="https://truthchurch.s.gy/tcapp" target="_blank" style="font-size: 16px; padding: 12px 24px; width: 100%; box-sizing: border-box; display: inline-block;">真道 APP 下載連結 ⚡</a>
+      </div>
+    </div>
+
+    <!-- 右側：非會友報名 (Google 表單) -->
+      <div style="flex: 1; min-width: 280px; background: rgba(255, 255, 255, 0.05); padding: 24px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+      <div>
+      <h4 style="font-size: 20px; margin-bottom: 12px; color: var(--gold);">非會友報名</h4>
+      <p style="font-size: 15px; margin-bottom: 12px;">點擊下方按鈕前往 Google 表單填寫報名資料。</p>
+      <p style="font-size: 13px; color: #ffeb3b; font-weight: bold; margin-bottom: 20px;">※ 填寫完表單請記得完成 ATM 繳費以保留名額。</p></div><div>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduo9buTkHyagQ3-dqtahAXddcjssF-SciKy8V9FRWgHzOwSg/viewform" target="_blank" style="font-size: 16px; padding: 12px 24px; width: 100%; box-sizing: border-box; display: inline-block;">非會友線上報名表單 📝</a>
+      </div></div></div></div>
+
+
+        
  <!-- 💡 下方：營會資訊網格區隔 -->
     <h2 style="margin-bottom: 20px;">營會詳細資訊</h2>
     <div class="grid">
