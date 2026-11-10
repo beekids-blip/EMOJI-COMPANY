@@ -12,15 +12,13 @@ const SITE = {
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
  works: [
-    { image: "images/happy (1).jpg", title: "作品名稱", author: "王X明", featured: true },
-    { image: "images/happy (2).jpg", title: "作品名稱作品名稱", author: "楊X明", featured: false },
-    { image: "images/happy (3).jpg", title: "作品名稱作品名稱作品名稱", author: "楊X明", featured: false },
-    { image: "images/happy (4).jpg", title: "作品名稱作品名稱作品名稱作品名稱", author: "楊X明", featured: true },
+    { image: "images/.jpg", title: "作品名稱", author: "王X明", featured: true },
+
   ],
 
  // 本輪得獎名單
  winners: [
-    { prize: "情緒共鳴獎", name: "楊X東" },
-    { prize: "我的百變怪", name: "楊X東1、楊X東2、楊X東3、楊X東4、楊X東5、楊X東6、楊X東7、楊X東8、楊X東9、楊X東0" },
+    { prize: "情緒共鳴獎", name: "" },
+    { prize: "我的百變怪", name: "" },
   ]
 };
