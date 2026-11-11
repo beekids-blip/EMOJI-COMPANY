@@ -9,12 +9,14 @@ const SITE = {
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
  works: [
+
+      <p>尚未開始投稿</p>
     //{ image: "images/.jpg", title: "作品名稱", author: "王X明", featured: true },
   ],
 
  // 本輪得獎名單
- winners: [
-//    { prize: "情緒共鳴獎", name: "" },
+ winners: [ <p>尚未開始投稿</p>
+ //   { prize: "情緒共鳴獎", name: "" },
  //   { prize: "我的百變怪", name: "" },
   ]
 };
