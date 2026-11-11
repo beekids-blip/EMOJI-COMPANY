@@ -7,18 +7,14 @@ const SITE = {
   formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScoUBHQNFneUOUD2DYlApitpX0ftXBJ8q8Qdxo1l6DjhjZsvw/viewform?usp=header",              // ← 貼上線上投稿／報名表單連結
   qrImage: "images/EDM.JPG",   // ← 投稿 QR Code 圖片（檔名大小寫要和 images 資料夾裡的一模一樣）
 
-  // 本週題目（把圖片放進 images，填檔名；沒有就留空）
-  topic: { title: "本週題目", image: "", text: "我這禮拜看到喜歡的人的心情" },
-
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
  works: [
-    { image: "images/.jpg", title: "作品名稱", author: "王X明", featured: true },
-
+    //{ image: "images/.jpg", title: "作品名稱", author: "王X明", featured: true },
   ],
 
  // 本輪得獎名單
  winners: [
-    { prize: "情緒共鳴獎", name: "" },
-    { prize: "我的百變怪", name: "" },
+//    { prize: "情緒共鳴獎", name: "" },
+ //   { prize: "我的百變怪", name: "" },
   ]
 };
