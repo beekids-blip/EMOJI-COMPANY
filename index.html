@@ -53,6 +53,10 @@
     .works{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
     .work{background:var(--navy2);border:2px solid rgba(255,198,26,.45);border-radius:16px;overflow:hidden}
     .work img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.work div{padding:10px 14px}
+    .work .w-title{padding:0!important;font-size:17px;color:var(--gold);line-height:1.4}
+    .work .w-title b{font-weight:800}
+    .work .w-why{padding:0!important;margin-top:4px;font-size:13px;color:var(--cream);opacity:.92;line-height:1.5}
+    .work .w-pre{font-size:12px;font-weight:400;color:#fff;opacity:.65;margin-right:4px}
     .empty{text-align:center;padding:40px 20px;border:2px dashed rgba(255,198,26,.5);border-radius:20px;color:#cfd8f5}
     .win{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px dashed rgba(255,255,255,.25)}.win:last-child{border:0}
     .win b{color:var(--gold)}
@@ -338,7 +342,8 @@
     function go(v){document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));
     document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));scrollTo(0,0)}
     const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-    function workHTML(list,empty){return list.length?'<div class="works">'+list.map(w=>`<div class="work"><img loading="lazy" src="${esc(w.image)}" alt="${esc(w.title||'')}"><div><b>${esc(w.title||'')}</b><br><small>${esc(w.author||'')}</small></div></div>`).join('')+'</div>':`<div class="empty">${empty}</div>`}
+    function workHTML(list,empty){return list.length?'<div class="works">'+list.map(w=>`<div class="work"><img loading="lazy" src="${esc(w.image)}" alt="${esc(w.title||'')}">
+<div>${w.title?'<div class="w-title"><span class="w-pre">牠是</span><b>'+esc(w.title)+'</b></div>':''}${w.author?'<div class="w-why"><span class="w-pre">因為</span>'+esc(w.author)+'</div>':''}</div>    </div>`).join('')+'</div>':`<div class="empty">${empty}</div>`}
     $('deadline').textContent=SITE.deadline;
     $('featured').innerHTML=workHTML(SITE.works.filter(w=>w.featured),'🖼️ 本輪精選作品即將登場，快來投稿吧！');
     $('allworks').innerHTML=workHTML(SITE.works,'🖼️ 作品陸續上架中，期待你的投稿！');
