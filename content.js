@@ -9,17 +9,17 @@ const SITE = {
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
  works: [
-     { image: "images/0001.jpg", title: "", author: "", featured: true },
-  { image: "images/0002.jpg", title: "", author: "", featured: false },
+     { image: "images/0001.jpg", title: "", author: "", featured: false },
+  { image: "images/0002.jpg", title: "", author: "", featured: true  },
   { image: "images/0003.jpg", title: "", author: "", featured: false },
-  { image: "images/0004.jpg", title: "", author: "", featured: true },
+  { image: "images/0004.jpg", title: "", author: "", featured: false },
   { image: "images/0005.jpg", title: "", author: "", featured: true },
   { image: "images/0006.jpg", title: "", author: "", featured: false },
   { image: "images/0007.jpg", title: "", author: "", featured: true },
-  { image: "images/0008.jpg", title: "", author: "", featured: false },
+  { image: "images/0008.jpg", title: "", author: "", featured: true },
   { image: "images/0009.jpg", title: "", author: "", featured: false },
   { image: "images/0010.jpg", title: "", author: "", featured: false },
-  { image: "images/0011.jpg", title: "", author: "", featured: true },
+  { image: "images/0011.jpg", title: "", author: "", featured: false },
   { image: "images/0012.jpg", title: "", author: "", featured: false }
   ],
 
