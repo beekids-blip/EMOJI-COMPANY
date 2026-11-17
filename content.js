@@ -9,9 +9,8 @@ const SITE = {
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
  works: [
-
-      <p>尚未開始投稿</p>
-    //{ image: "images/.jpg", title: "作品名稱", author: "王X明", featured: true },
+    { image: "images/20261117111334_page-000.jpg", title: "嘻嘻", author: "Naumi", featured: true },
+    { image: "images/20261117111334_page-0002.jpg", title: "嘻嘻", author: "Naumi", featured: true },
   ],
 
  // 本輪得獎名單
