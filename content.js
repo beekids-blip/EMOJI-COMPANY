@@ -24,8 +24,8 @@ const SITE = {
   ],
 
  // 本輪得獎名單
- winners: [ <p>尚未開始投稿</p>
- //   { prize: "情緒共鳴獎", name: "" },
- //   { prize: "我的百變怪", name: "" },
+ winners: [
+    { prize: "情緒共鳴獎", name: "尚未開獎" },
+    { prize: "我的百變怪", name: "尚未開獎" },
   ]
 };
