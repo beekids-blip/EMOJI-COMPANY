@@ -376,7 +376,7 @@
     $('winners').innerHTML=SITE.winners.map(w=>`<div class="win"><span>🏆 ${esc(w.prize)}</span><b>${esc(w.name)}</b></div>`).join('')||'敬請期待';
     document.querySelectorAll('.formlink').forEach(a=>{a.href=SITE.formUrl;a.target='_blank';a.rel='noopener'});
     if(SITE.formUrl&&SITE.formUrl!=='#'){$('formEmbed').innerHTML=`<iframe class="formframe" src="${esc(SITE.formUrl.replace(/viewform.*$/,'viewform?embedded=true'))}" title="投稿表單">載入中…</iframe>`}
-    if(SITE.qrImage)$('qr').innerHTML=`<img src="${esc(SITE.qrImage)}" alt="投稿 QR Code" style="width:180px;border-radius:12px;border:3px solid var(--gold);margin:8px 0 16px;display:block">`;
+    if(SITE.qrImage&&$('qr'))$('qr').innerHTML=`<img src="${esc(SITE.qrImage)}" alt="投稿 QR Code" style="width:180px;border-radius:12px;border:3px solid var(--gold);margin:8px 0 16px;display:block">`;
        
 /* 🔍 作品放大檢視（點圖放大，可左右切換） */
 (function(){
