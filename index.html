@@ -342,7 +342,6 @@
     const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
     function workHTML(list,empty){return list.length?'<div class="works">'+list.map(w=>`<div class="work"><img loading="lazy" src="${esc(w.image)}" alt="${esc(w.title||'')}"><div><b>${esc(w.title||'')}</b><br><small>${esc(w.author||'')}</small></div></div>`).join('')+'</div>':`<div class="empty">${empty}</div>`}
     $('deadline').textContent=SITE.deadline;
-    $('topicBox').innerHTML=`<h3>${esc(SITE.topic.title)}</h3>`+(SITE.topic.image?`<div class="topic"><img src="${esc(SITE.topic.image)}" alt=""><p class="big">${esc(SITE.topic.text)}</p></div>`:`<p class="big">${esc(SITE.topic.text)}</p>`);
     $('featured').innerHTML=workHTML(SITE.works.filter(w=>w.featured),'🖼️ 本輪精選作品即將登場，快來投稿吧！');
     $('allworks').innerHTML=workHTML(SITE.works,'🖼️ 作品陸續上架中，期待你的投稿！');
     $('winners').innerHTML=SITE.winners.map(w=>`<div class="win"><span>🏆 ${esc(w.prize)}</span><b>${esc(w.name)}</b></div>`).join('')||'敬請期待';
