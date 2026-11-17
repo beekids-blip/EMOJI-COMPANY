@@ -9,8 +9,18 @@ const SITE = {
 
   // 作品畫廊（精選作品會顯示在首頁，最新的放最前面）
  works: [
-    { image: "images/20261117111334_page-000.jpg", title: "嘻嘻", author: "Naumi", featured: true },
-    { image: "images/20261117111334_page-0002.jpg", title: "嘻嘻", author: "Naumi", featured: true },
+    { image: "images/photo-001.jpg", title: "禧嘻", author: "", featured: true },
+    { image: "images/photo-002.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-003.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-004.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-005.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-006.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-007.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-008.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-009.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-010.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-011.jpg", title: "", author: "", featured: true },
+    { image: "images/photo-012.jpg", title: "", author: "", featured: true }
   ],
 
  // 本輪得獎名單
