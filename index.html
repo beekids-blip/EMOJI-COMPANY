@@ -378,7 +378,49 @@
     if(SITE.formUrl&&SITE.formUrl!=='#'){$('formEmbed').innerHTML=`<iframe class="formframe" src="${esc(SITE.formUrl.replace(/viewform.*$/,'viewform?embedded=true'))}" title="投稿表單">載入中…</iframe>`}
     if(SITE.qrImage&&$('qr'))$('qr').innerHTML=`<img src="${esc(SITE.qrImage)}" alt="投稿 QR Code" style="width:180px;border-radius:12px;border:3px solid var(--gold);margin:8px 0 16px;display:block">`;
        
-/* 🔍 作品放大檢視（點圖放大，可左右切換） */
+<footer>© 2027 Bee Kids・真道教會｜Emoji電力公司 情緒管理營</footer>
+    <script src="content.js"></script>
+    <script>
+    // ▼ 步驟1：請將下方的網址替換成你部署 Google Apps Script 取得的「網頁應用程式網址」 ▼
+    const GAS_API_URL = "https://script.google.com/macros/s/你的部署ID/exec";
+
+    const $=id=>document.getElementById(id);
+    function go(v){document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));
+    document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));scrollTo(0,0)}
+    const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    function workHTML(list,empty){return list.length?'<div class="works">'+list.map(w=>`<div class="work"><img loading="lazy" src="${esc(w.image)}" alt="${esc(w.title||'')}">
+<div>${w.title?'<div class="w-title"><span class="w-pre">牠是</span><b>'+esc(w.title)+'</b></div>':''}${w.author?'<div class="w-why"><span class="w-pre">因為</span>'+esc(w.author)+'</div>':''}</div>    </div>`).join('')+'</div>':`<div class="empty">${empty}</div>`}
+
+    // 將畫面渲染包成獨立函式，方便初始載入與抓取試算表後更新畫面
+    function renderSite(data){
+      if(!data) return;
+      const works = data.works || [];
+      const winners = data.winners || [];
+
+      if($('deadline')) $('deadline').textContent = data.deadline || '';
+      if($('featured')) $('featured').innerHTML = workHTML(works.filter(w=>w.featured),'🖼️ 本輪精選作品即將登場，快來投稿吧！');
+      if($('allworks')) $('allworks').innerHTML = workHTML(works,'🖼️ 作品陸續上架中，期待你的投稿！');
+      if($('winners')) $('winners').innerHTML = winners.map(w=>`<div class="win"><span>🏆 ${esc(w.prize)}</span><b>${esc(w.name)}</b></div>`).join('')||'敬請期待';
+      
+      document.querySelectorAll('.formlink').forEach(a=>{a.href=data.formUrl||'#';a.target='_blank';a.rel='noopener'});
+      
+      // 嵌入表單：若網址未變動則不重複重載，避免訪客填寫到一半畫面閃爍
+      if(data.formUrl && data.formUrl!=='#' && $('formEmbed')){
+      const embedSrc = data.formUrl.replace(/viewform.*$/,'viewform?embedded=true');
+      const currentIframe = $('formEmbed').querySelector('iframe');
+      if(!currentIframe || currentIframe.src !== embedSrc){          $('formEmbed').innerHTML = `<iframe class="formframe" src="${esc(embedSrc)}" title="投稿表單">載入中…</iframe>`;} }
+      if(data.qrImage && $('qr')){$('qr').innerHTML = `<img src="${esc(data.qrImage)}" alt="投稿 QR Code" style="width:180px;border-radius:12px;border:3px solid var(--gold);margin:8px 0 16px;display:block">`;}}
+
+    // 1. 先用原本的 content.js 立即渲染（確保已公布的網站一打開就秒開，完全不空白）
+    if(typeof SITE !== 'undefined'){renderSite(SITE);}
+
+    // 2. 在背景向 Google 試算表抓取最新資料，抓到後自動無縫更新畫面
+    if(GAS_API_URL && !GAS_API_URL.includes("AKfycbwsuP4c4azwlzTKHyfS9cRQ8M6zvBKM1B71zx5FA2XoQzspRqYveDEEiVh8ORg-mOSZkA")){fetch(GAS_API_URL)
+        .then(res => res.json())
+        .then(latestData => {window.SITE = latestData;renderSite(latestData);})
+        .catch(err => {console.warn("暫時無法取得試算表最新資料，維持顯示預設內容：", err); }); }
+   
+    /* 🔍 作品放大檢視（點圖放大，可左右切換） */
 (function(){
 const lb=document.createElement('div');lb.className='lb';lb.innerHTML='<button class="x" aria-label="關閉">✕</button><button class="p" aria-label="上一張">‹</button><img alt=""><div class="lb-cap"></div><button class="nx" aria-label="下一張">›</button>';document.body.appendChild(lb);
 const im=lb.querySelector('img'),cap=lb.querySelector('.lb-cap');
@@ -401,6 +443,7 @@ else if(e.key==='ArrowRight')show(i+1);});
 let x0=null;lb.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{
 if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;
 if(Math.abs(dx)>50)show(dx<0?i+1:i-1);});})();    
+    
     </script>
 </body>
 </html>
